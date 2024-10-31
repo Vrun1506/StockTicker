@@ -1,13 +1,9 @@
-# Template: Robot Framework - Minimal
+This is a project I completed following the completion of my work experience placement in October 2022 at SRS Consulting Inc. in Fremont, California. 
 
-This is the simplest template to start from.
+I built a web scraper that fetches the stock price of a stock that is chosen by the user. 
 
-- Get started from a simple task template in `tasks.robot`.
-  - Uses [Robot Framework](https://robocorp.com/docs-robot-framework/languages-and-frameworks/robot-framework/basics) syntax.
-- You can configure your robot `robot.yaml`.
-- You can configure dependencies in `conda.yaml`.
+This stock data is then validated against data I find from looking at the Yahoo! Finance API request I make and then once validated, if there is negligible change between the web scraped data and the API fetch data, an email is sent out to users on a pre-defined mailing list utilising the Robot framework.
 
-## Learning materials
+In order for the emailing functionality, I had to create an mail account on Outlook and in order to athenticate myself, I had to hardcode the login details and include them in the program as well as the email addresses of the users in the mailing list. 
 
-- [Robocorp Developer Training Courses](https://robocorp.com/docs/courses)
-- [Documentation links on Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework)
+The only other change I've made to the code excluding any personal data is swapping the for loop I used to iterate through the email addresses and opted for a hardcoded version instead which works for a singular email address.
